@@ -1,0 +1,89 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f6f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.container {
+  background: white;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-align: center;
+  width: 90%;
+  max-width: 400px;
+}
+
+.hidden {
+  display: none;
+}
+
+.rules {
+  text-align: left;
+  margin: 15px 0;
+}
+
+.btn-group {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  background: #3498db;
+  color: white;
+  font-size: 16px;
+  transition: 0.2s;
+}
+
+button:hover {
+  background: #2980b9;
+}
+
+.progress {
+  margin-bottom: 10px;
+  font-weight: bold;
+  background: #eee;
+  padding: 5px;
+  border-radius: 10px;
+  display: inline-block;
+}
+
+.answers {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin: 15px 0;
+}
+
+.answers button {
+  background: #ecf0f1;
+  color: #333;
+}
+
+.correct {
+  background: #2ecc71 !important;
+  color: white !important;
+}
+
+.wrong {
+  background: #e74c3c !important;
+  color: white !important;
+}
+
+.next-btn {
+  margin-top: 10px;
+  background: #9b59b6;
+}
+
+.next-btn:hover {
+  background: #8e44ad;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ujian Matematika</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="home" class="container">
+    <h1>Ujian Matematika</h1>
+    <div class="rules">
+      <p>📌 Peraturan:</p>
+      <ul>
+        <li>Dilarang pakai kalkulator (kalau pakai dosa 😆)</li>
+        <li>Boleh pakai oret-oretan</li>
+        <li>Nilai upload di status WhatsApp ✅</li>
+      </ul>
+    </div>
+    <div class="btn-group">
+      <button onclick="startQuiz('easy')">Easy</button>
+      <button onclick="startQuiz('hard')">Hard</button>
+    </div>
+  </div>
+
+  <div id="quiz" class="container hidden">
+    <div class="progress" id="progress">1/20</div>
+    <div class="question" id="question">Soal muncul di sini</div>
+    <div class="answers">
+      <button onclick="checkAnswer(0)" id="ans0"></button>
+      <button onclick="checkAnswer(1)" id="ans1"></button>
+      <button onclick="checkAnswer(2)" id="ans2"></button>
+      <button onclick="checkAnswer(3)" id="ans3"></button>
+    </div>
+    <button class="next-btn" onclick="nextQuestion()">Next</button>
+  </div>
+
+  <div id="result" class="container hidden">
+    <h2 id="score"></h2>
+    <div class="btn-group">
+      <button onclick="goHome()">Home</button>
+      <button onclick="retryQuiz()">Coba Lagi</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
